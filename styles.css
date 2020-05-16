@@ -1,4 +1,19 @@
-  body {
+@keyframes z-index-down {
+  0% {
+    z-index: 2;
+  }
+  50% {
+    z-index: 2;
+  }
+  100% {
+    z-index: 2;
+  }
+}
+  
+  .background {
+    position: fixed;
+    height: 100%;
+    width: 100%;
     background: #918169;
   }
   
@@ -59,7 +74,7 @@
     z-index: 6;
     transform-origin: top;
     transform: rotateX(0deg);
-    transition: all 500ms ease;
+    transition: all 500ms cubic-bezier(1,-0.31,.83,.67);
   }
   
   .letter{
@@ -70,8 +85,12 @@
     background: #ffffff;
     width: 280px;
     height: 180px;
-    border-radius: 20px;
-    transition: all 1s ease;
+    border-radius: 10px;
+    transition: all 500ms ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
   }
   
   .letter h1{
@@ -83,11 +102,31 @@
     color: #8f8f8f;
     font-weight: 900;
   }
+
+  .letter div {
+    width: 94%;
+    height: 2px;
+    background-color: #ebebdb;
+  }
   
   .mail:hover {
     transform: scale(1.2);
   }
 
+  .mail-scale {
+    transform: scale(3);
+    transition: all 200ms ease;
+  }
+
+  .mail:hover .letter {
+    transform: translateY(-25%);
+    transition: all 800ms cubic-bezier(1,-0.31,.83,.67);
+  }
+
   .mail:hover .cover:before{
     transform: rotateX(180deg);
+    z-index: 2;
+    animation-duration: 500ms;
+    animation-direction: alternate;
+    transition: all 500ms ease, z-index 200ms;
   }
