@@ -12,12 +12,13 @@
   .mail{
     width: 300px;
     height: 200px;
-    background: #fdfff6;
+    background: #c0c0c0;
     position: relative;
     transform-style: preserve-3d;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     cursor: pointer;
+    transition: all 300ms ease;
   }
   
   .mail:before{
@@ -58,7 +59,7 @@
     z-index: 6;
     transform-origin: top;
     transform: rotateX(0deg);
-    transition: all 1s 1s ease;
+    transition: all 500ms ease;
   }
   
   .letter{
@@ -66,7 +67,7 @@
     z-index: 3;
     top: 0px;
     left: 10px;
-    background: #dedede;
+    background: #ffffff;
     width: 280px;
     height: 180px;
     border-radius: 20px;
@@ -79,11 +80,14 @@
     left: 50%;
     transform: translate(-50%,-50%);
     font-size: 80px;
-    color: #fbfcfd;
+    color: #8f8f8f;
     font-weight: 900;
   }
   
+  .mail:hover {
+    transform: scale(1.2);
+  }
+
   .mail:hover .cover:before{
     transform: rotateX(180deg);
-    transition: all 1s ease;
   }
