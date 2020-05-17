@@ -93,12 +93,20 @@ body {
 	margin: 0;
 }
 
-body.page-1 #pagination li:nth-of-type(1), body.page-2 #pagination li:nth-of-type(2), body.page-3 #pagination li:nth-of-type(3), body.page-4 #pagination li:nth-of-type(4), body.page-5 #pagination li:nth-of-type(5), body.page-6 #pagination li:nth-of-type(6), body.page-7 #pagination li:nth-of-type(7), body.page-8 #pagination li:nth-of-type(8), body.page-9 #pagination li:nth-of-type(9) {
+body.page-1 #pagination li:nth-of-type(1),
+body.page-2 #pagination li:nth-of-type(2),
+body.page-3 #pagination li:nth-of-type(3),
+body.page-4 #pagination li:nth-of-type(4),
+body.page-5 #pagination li:nth-of-type(5),
+body.page-6 #pagination li:nth-of-type(6),
+body.page-7 #pagination li:nth-of-type(7),
+body.page-8 #pagination li:nth-of-type(8),
+body.page-9 #pagination li:nth-of-type(9) {
 	transform: scale(2);
 }
 
 #page1 {
-    padding-top: 15vh;
+    padding-top: 7vh;
     text-align: center; 
 }
 
@@ -160,11 +168,17 @@ body.page-1 #pagination li:nth-of-type(1), body.page-2 #pagination li:nth-of-typ
     width: 1000px;
 }
 
-#page5 p {
-    margin-top: -25vh;
-    margin-left: -250px;
-    writing-mode: vertical-rl;
+#p5p2 {
+    margin-left: -20vw;
+    margin-top: 65vh;
     line-height: 2;
+}
+
+#p5p1 {
+    margin-top: -25vh;
+    margin-left: -20vw;
+    line-height: 2;
+    writing-mode: vertical-rl;
 }
 
 #page6 {
@@ -175,8 +189,10 @@ body.page-1 #pagination li:nth-of-type(1), body.page-2 #pagination li:nth-of-typ
 
 #page6 p{
     font-size: 35px !important;
-    margin-left: 58vw;
-    padding-top: 20vh;
+    text-shadow: 3px 3px rgb(24, 24, 24);
+    margin-left: -58vw;
+    padding-top: 58vh;
+
 }
 
 #page7 {
