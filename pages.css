@@ -98,12 +98,12 @@ body.page-1 #pagination li:nth-of-type(1), body.page-2 #pagination li:nth-of-typ
 }
 
 #page1 {
-    padding-top: 10%;
+    padding-top: 15vh;
     text-align: center; 
 }
 
 #page2 {
-    padding-top: 25%;
+    padding-top: 44vh;
     font-size: 50px !important;
 }
 
@@ -114,7 +114,7 @@ body.page-1 #pagination li:nth-of-type(1), body.page-2 #pagination li:nth-of-typ
 #page3 {
     display: flex;
     justify-content: space-around;
-    padding-top: 5%;
+    padding-top: 10vh;
 }
 
 #page3 img {
@@ -123,14 +123,105 @@ body.page-1 #pagination li:nth-of-type(1), body.page-2 #pagination li:nth-of-typ
 }
 
 #page3 p {
-    margin-top: 100px;
-    margin-right: 50px;
+    margin-top: 20px;
+    margin-right: 100px;
+    margin-left: 100px;
     width: 26%;
+    line-height: 2;
+    text-align: center;
+}
+
+#page4 {
+    padding-top: 10vh;
+    padding-right: 8%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#page4 img{
+    width: 1000px;
+    height: 680px;
+}
+
+#page4 p{
+    padding-top: 550px; 
+    flex: 1;
+}
+
+#page5 {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10vh;
+}
+
+#page5 img {
+    height: 750px;
+    width: 1000px;
+}
+
+#page5 p {
+    margin-top: -25vh;
+    margin-left: -250px;
+    writing-mode: vertical-rl;
     line-height: 2;
 }
 
+#page6 {
+    background-image: url("assets/p6.jpg");
+    background-position: 20% 20%;
+    background-size: cover;
+}
+
+#page6 p{
+    font-size: 35px !important;
+    margin-left: 58vw;
+    padding-top: 20vh;
+}
+
+#page7 {
+    padding-top: 8vh;
+    text-align: center; 
+}
+
+#page7 p {
+    font-size: 40px !important;
+}
+
+
+#page7 a {
+    color: white !important;
+    text-decoration:none;
+}
+
+#page7 img {
+    width: 1200px;
+    height: 600px;
+    object-position: 0 30px;;
+}
+
+#page8 {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10vh;
+}
+
+#page8 img {
+    width: 700px;
+    height: 80%;
+    padding-right: 10vw;
+}
+
+#page8 p {
+    margin-top: 200px;
+    margin-left: 150px;
+    width: 26%;
+    line-height: 2;
+    text-align: center;
+}
+
 #page9 {
-    padding-top: 20%;
+    padding-top: 35vh;
 }
 
 #page9 p {
